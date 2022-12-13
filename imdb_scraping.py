@@ -34,7 +34,7 @@ for s in range(1, 11):
         #adds info for each episode to friends_data
         friends_data.append(row_data)
 # creates data frame of friends_data
-df = pd.DataFrame(friends_data, columns=['Title','AirDate','Rating','Num_Votes', 'Season_Num', 'Episode_Num', 'Description'])
+df = pd.DataFrame(friends_data, columns=['title','airdate','rating','num_votes', 'season_num', 'episode_num', 'description'])
 print(df.head())
 #exports data to csv
 df.to_csv('TheFriendsIMDBPerEpisode.csv', index=False)
